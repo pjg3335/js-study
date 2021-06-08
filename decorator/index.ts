@@ -23,10 +23,3 @@ console.log(Object.getOwnPropertyDescriptor(user, 'name'))
 Object.defineProperty(user, 'name', { writable: false })
 // user.name = 'sumin' // TypeError: Cannot assign to read only property 'name' of object '#<Object>'
 console.log(user)
-
-function readOnly(target, key: string, descriptor: PropertyDescriptor) {
-  return {
-    ...descriptor,
-    writable: false
-  }
-}
