@@ -39,3 +39,5 @@ const module2_3 = require("./module2");
 // 같은 reference갖기 때문에 하나 바꾸면 다 바뀜
 module2.module2 = "changed module2";
 console.log(module2_1); // { module2: 'changed module2' }
+
+// 사족으로 import구문은 통파일 가지고 오지않고 export단위로도 가져올수 있음
